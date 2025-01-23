@@ -1,0 +1,500 @@
+{
+  "SchemaVersion": 2,
+  "CreatedAt": "2025-01-22T16:01:29.985026-05:00",
+  "ArtifactName": "harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak:26.0.8",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "redhat",
+      "Name": "9.5"
+    },
+    "ImageID": "sha256:fdae51e6796a34707beb968d0c4d2ecc4f1e1a79c53525b3b288dc9ae17a08bb",
+    "DiffIDs": [
+      "sha256:a377c2e7ffb99f8889e322b1fadcb448dc1c3c59615414d11218ddf1bd83671d",
+      "sha256:d86d133cdf1d91f5873c025ac25f0baf9c448e4c8fd588f74dc5bcab92758733",
+      "sha256:dbb7916f1bd38910d02cbeb989d565910cb897d12893fa9f06fc102bc44a8585",
+      "sha256:66330c3b628fc044aa4950b4c7dc50518c55c3b1642e709e2026e849918bfca1",
+      "sha256:18a88d02b66b68570c88d9268b3017d5d0f3e0731c5722c164b1985a28dbe276"
+    ],
+    "RepoTags": [
+      "harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak:26.0.8"
+    ],
+    "RepoDigests": [
+      "harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak@sha256:751e21960cf3d2b38c57625695d664c9ac19ca98c71ece9b5bf520e757028754"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2025-01-16T01:12:42.533300517Z",
+      "history": [
+        {
+          "created": "2025-01-09T06:41:15.397832703Z",
+          "created_by": "/bin/sh -c #(nop) LABEL maintainer=\"Red Hat, Inc.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.410039666Z",
+          "created_by": "/bin/sh -c #(nop) LABEL vendor=\"Red Hat, Inc.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.423070623Z",
+          "created_by": "/bin/sh -c #(nop) LABEL url=\"https://www.redhat.com\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.435196267Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.component=\"ubi9-minimal-container\"       name=\"ubi9-minimal\"       version=\"9.5\"       distribution-scope=\"public\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.447658578Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.license_terms=\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.459542705Z",
+          "created_by": "/bin/sh -c #(nop) LABEL summary=\"Provides the latest release of the minimal Red Hat Universal Base Image 9.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.471768185Z",
+          "created_by": "/bin/sh -c #(nop) LABEL description=\"The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.484840776Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.k8s.description=\"The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.496780765Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.k8s.display-name=\"Red Hat Universal Base Image 9 Minimal\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.509122396Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.openshift.expose-services=\"\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.521931314Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.openshift.tags=\"minimal rhel9\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.535217192Z",
+          "created_by": "/bin/sh -c #(nop) ENV container oci",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.849493891Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:ca56c4399f153561fdce7628edce358895393e72057424065cc9920dd3bc2dfc in / ",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.919609147Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. ",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:15.932396303Z",
+          "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:16.141200026Z",
+          "created_by": "/bin/sh -c . /cachi2/cachi2.env \u0026\u0026     rm -rf /var/log/*",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-09T06:41:16.365856447Z",
+          "created_by": "/bin/sh -c #(nop) LABEL \"build-date\"=\"2025-01-09T06:40:34\" \"architecture\"=\"x86_64\" \"vcs-type\"=\"git\" \"vcs-ref\"=\"98c9e4c67f5f2dfc85d12e0f1fd70b809f2a3132\" \"build-date\"=\"2025-01-09T06:29:15Z\" \"release\"=\"1736404155\""
+        },
+        {
+          "created": "2025-01-09T06:41:20.000171346Z",
+          "created_by": "/bin/sh",
+          "comment": "FROM quay.io/redhat-user-workloads/osci-rhel-containers-tenant/rhel-9-5/ubi9-minimal-9-5:98c9e4c67f5f2dfc85d12e0f1fd70b809f2a3132-linux-x86-64"
+        },
+        {
+          "created": "2025-01-15T23:57:55.577900151Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY HTTP_PROXY http_proxy",
+          "comment": "FROM registry.access.redhat.com/ubi9-minimal:9.5",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:57:55.59816856Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:57:55.618151324Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY PIP_INDEX_URL http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:57:55.638222984Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:57:55.657912356Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY NPM_CONFIG_REGISTRY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:57:55.677104381Z",
+          "created_by": "/bin/sh -c #(nop) ARG GEMRC GOPROXY GOSUMDB HTTP_PROXY NPM_CONFIG_REGISTRY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:57:55.696458308Z",
+          "created_by": "/bin/sh -c #(nop) ARG GEMRC GOPROXY GOSUMDB HTTP_PROXY MAKEFLAGS NPM_CONFIG_REGISTRY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:57:55.786522482Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:306f3456f5298b7899d00ddef04d0b00eade0c08289cf2ec82aeace0d79d9871 in /dsop-fix/ ",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:57:55.872933958Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:7f46ca4fc5ec501e283c0ab6d548cdcd19f459277525f9041b16421c083f22de in /etc/ ",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:57:56.030330904Z",
+          "created_by": "/bin/sh -c #(nop) COPY multi:2418e2f29dbe973ce303939d58f09e4321320959105445d7c382f2fbf57d5f6b in /etc/pki/ca-trust/source/anchors/ ",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:58:04.307230951Z",
+          "created_by": "|9 GEMRC=.ironbank-gemrc GOPROXY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/goproxy/ GOSUMDB=sum.golang.org http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/gosum MAKEFLAGS=-j 4 NPM_CONFIG_REGISTRY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/npmproxy/ PIP_INDEX_URL=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/pypi/simple/ PIP_TRUSTED_HOST=nexus-repository-manager.nexus-repository-manager.svc.cluster.local /bin/sh -c echo \"[main]\" \u003e\u003e /etc/dnf/dnf.conf \u0026\u0026     echo \"exclude=filesystem-*\" \u003e\u003e /etc/dnf/dnf.conf \u0026\u0026     echo Update packages and install DISA STIG fixes \u0026\u0026     microdnf repolist \u0026\u0026     microdnf --setopt install_weak_deps=0 update -y \u0026\u0026     microdnf install -y crypto-policies-scripts \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_configure_crypto_policy.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_openssl_use_strong_entropy.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_configure_openssl_crypto_policy.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_configure_gnutls_tls_crypto_policy.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_harden_sshd_ciphers_openssh_conf_crypto_policy.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_harden_sshd_ciphers_opensshserver_conf_crypto_policy.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_harden_sshd_macs_openssh_conf_crypto_policy.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_harden_sshd_macs_opensshserver_conf_crypto_policy.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_accounts_umask_etc_profile.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_accounts_umask_etc_csh_cshrc.sh \u0026\u0026     /dsop-fix/xccdf_org.ssgproject.content_rule_package_gnutls-utils_installed.sh \u0026\u0026     chmod +t /tmp /var/tmp \u0026\u0026     update-ca-trust \u0026\u0026     update-ca-trust force-enable \u0026\u0026     microdnf clean all \u0026\u0026     rm -rf /dsop-fix/ /var/cache/dnf/ /var/tmp/* /tmp/* /var/tmp/.???* /tmp/.???*",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:58:04.534608143Z",
+          "created_by": "|9 GEMRC=.ironbank-gemrc GOPROXY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/goproxy/ GOSUMDB=sum.golang.org http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/gosum MAKEFLAGS=-j 4 NPM_CONFIG_REGISTRY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/npmproxy/ PIP_INDEX_URL=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/pypi/simple/ PIP_TRUSTED_HOST=nexus-repository-manager.nexus-repository-manager.svc.cluster.local /bin/sh -c set -eux;     disabledAlgorithms='        TLS_CHACHA20_POLY1305_SHA256,        TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256,        TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256,        TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256,     ';     disabledAlgorithms=\"${disabledAlgorithms//[[:space:]]/}\";     sed -i \"s/^jdk\\.tls\\.disabledAlgorithms=/jdk.tls.disabledAlgorithms=$disabledAlgorithms/\"        /usr/share/crypto-policies/FIPS/java.txt;",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:58:04.553922867Z",
+          "created_by": "/bin/sh -c #(nop) ENV container oci",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:58:04.57335778Z",
+          "created_by": "/bin/sh -c #(nop) ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:58:04.592516916Z",
+          "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-15T23:58:05.000997409Z",
+          "created_by": "/bin/sh -c #(nop) LABEL \"maintainer\"=\"ironbank@dsop.io\" \"org.opencontainers.image.created\"=\"2025-01-15 23:57:50+00:00\" \"org.opencontainers.image.source\"=\"https://repo1.dso.mil/dsop/redhat/ubi/9.x/ubi9-minimal\" \"org.opencontainers.image.revision\"=\"f6e7c36be972ae5fb0bbbf832a6c1e75c3cd1e31\" \"mil.dso.ironbank.image.parent\"=\"\" \"mil.dso.ironbank.ci.id\"=\"3873675\" \"org.opencontainers.image.title\"=\"ubi9-minimal\" \"org.opencontainers.image.description\"=\"Red Hat Universal Base Images (UBI) are OCI-compliant container base operating system images with complementary runtime languages and packages that are freely redistributable.\" \"org.opencontainers.image.licenses\"=\"Red Hat Universal Base Image EULA\" \"org.opencontainers.image.url\"=\"https://catalog.redhat.com/software/container-stacks/detail/5ec53f50ef29fd35586d9a56\" \"org.opencontainers.image.vendor\"=\"Redhat\" \"org.opencontainers.image.version\"=\"9.5\" \"mil.dso.ironbank.image.keywords\"=\"base,os,rhel,ubi\" \"mil.dso.ironbank.image.type\"=\"commercial\" \"mil.dso.ironbank.product.name\"=\"UBI9-minimal\" \"mil.dso.ironbank.os-type\"=\"ubi9-container\""
+        },
+        {
+          "created": "2025-01-16T00:30:02.455122088Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY HTTP_PROXY http_proxy",
+          "comment": "FROM registry1.dso.mil/ironbank/redhat/ubi/ubi9-minimal:9.5",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:02.472714073Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:02.490810199Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY PIP_INDEX_URL http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:02.510212713Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:02.5276438Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY NPM_CONFIG_REGISTRY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:02.545579298Z",
+          "created_by": "/bin/sh -c #(nop) ARG GEMRC GOPROXY GOSUMDB HTTP_PROXY NPM_CONFIG_REGISTRY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:02.562931287Z",
+          "created_by": "/bin/sh -c #(nop) ARG GEMRC GOPROXY GOSUMDB HTTP_PROXY MAKEFLAGS NPM_CONFIG_REGISTRY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:44.025887925Z",
+          "created_by": "|9 GEMRC=.ironbank-gemrc GOPROXY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/goproxy/ GOSUMDB=sum.golang.org http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/gosum MAKEFLAGS=-j 4 NPM_CONFIG_REGISTRY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/npmproxy/ PIP_INDEX_URL=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/pypi/simple/ PIP_TRUSTED_HOST=nexus-repository-manager.nexus-repository-manager.svc.cluster.local /bin/sh -c microdnf upgrade -y --nodocs \u0026\u0026     microdnf install -y java-21-openjdk java-21-openjdk-devel \u0026\u0026     microdnf clean all \u0026\u0026     rm -rf /var/cache/yum",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:44.044711144Z",
+          "created_by": "/bin/sh -c #(nop) HEALTHCHECK NONE",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:44.06314162Z",
+          "created_by": "/bin/sh -c #(nop) USER 1001",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:44.080635798Z",
+          "created_by": "/bin/sh -c #(nop) ENV LANG C.UTF-8",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:44.098796816Z",
+          "created_by": "/bin/sh -c #(nop) ENV JAVA_HOME /usr/lib/jvm/java",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:44.116661948Z",
+          "created_by": "/bin/sh -c #(nop) ENV PATH $JAVA_HOME/bin:$PATH",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:44.134381712Z",
+          "created_by": "/bin/sh -c #(nop) CMD [\"jshell\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T00:30:46.51561164Z",
+          "created_by": "/bin/sh -c #(nop) LABEL \"maintainer\"=\"ironbank@dsop.io\" \"org.opencontainers.image.created\"=\"2025-01-16 00:29:54+00:00\" \"org.opencontainers.image.source\"=\"https://repo1.dso.mil/dsop/redhat/openjdk/openjdk21.x/openjdk21-devel\" \"org.opencontainers.image.revision\"=\"8bece617a04ca6605e4591c62cdb9cd0e2b0dbdf\" \"mil.dso.ironbank.image.parent\"=\"registry1.dso.mil/ironbank/redhat/ubi/ubi9-minimal:9.5@sha256:15a66fb1dfef98c6a457c4b8d3a830d64a0b3b9aa046a9608fa97527c17880c7\" \"mil.dso.ironbank.ci.id\"=\"3873988\" \"org.opencontainers.image.title\"=\"openjdk21-devel\" \"org.opencontainers.image.description\"=\"Red Hat platform for building and running plain Java applications (fat-jar and flat classpath)\" \"org.opencontainers.image.licenses\"=\"Red Hat Enterprise Agreement\" \"org.opencontainers.image.url\"=\"https://developers.redhat.com/java\" \"org.opencontainers.image.vendor\"=\"Red Hat\" \"org.opencontainers.image.version\"=\"1.21\" \"mil.dso.ironbank.image.keywords\"=\"openjdk,jdk,Red Hat,Java\" \"mil.dso.ironbank.image.type\"=\"opensource\" \"mil.dso.ironbank.product.name\"=\"openjdk\""
+        },
+        {
+          "created": "2025-01-16T01:12:37.704102155Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY HTTP_PROXY http_proxy",
+          "comment": "FROM registry1.dso.mil/ironbank/redhat/openjdk/openjdk21-devel:1.21",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:37.758203238Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:37.817718804Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY PIP_INDEX_URL http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:37.847717724Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:37.922100087Z",
+          "created_by": "/bin/sh -c #(nop) ARG GOPROXY GOSUMDB HTTP_PROXY NPM_CONFIG_REGISTRY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:37.964383163Z",
+          "created_by": "/bin/sh -c #(nop) ARG GEMRC GOPROXY GOSUMDB HTTP_PROXY NPM_CONFIG_REGISTRY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:38.027655408Z",
+          "created_by": "/bin/sh -c #(nop) ARG GEMRC GOPROXY GOSUMDB HTTP_PROXY MAKEFLAGS NPM_CONFIG_REGISTRY PIP_INDEX_URL PIP_TRUSTED_HOST http_proxy",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:38.148494182Z",
+          "created_by": "/bin/sh -c #(nop) USER root",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:40.075498058Z",
+          "created_by": "|9 GEMRC=.ironbank-gemrc GOPROXY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/goproxy/ GOSUMDB=sum.golang.org http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/gosum MAKEFLAGS=-j 4 NPM_CONFIG_REGISTRY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/npmproxy/ PIP_INDEX_URL=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/pypi/simple/ PIP_TRUSTED_HOST=nexus-repository-manager.nexus-repository-manager.svc.cluster.local /bin/sh -c microdnf upgrade -y \u0026\u0026     microdnf clean all \u0026\u0026     rm -rf /var/cache/yum \u0026\u0026     echo \"fips.provider.7=XMLDSig\" \u003e\u003e /usr/lib/jvm/java/conf/security/java.security \u0026\u0026     echo \"keycloak:x:2000:root\" \u003e\u003e /etc/group \u0026\u0026     echo \"keycloak:x:2000:2000:keycloak user:/opt/keycloak:/sbin/nologin\" \u003e\u003e /etc/passwd",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:40.917340083Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:820b7307eb67701fa555458639e731e04991ab242ef80b1a7ba9a7081d5c72bb in /opt/keycloak ",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:41.57767022Z",
+          "created_by": "|9 GEMRC=.ironbank-gemrc GOPROXY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/goproxy/ GOSUMDB=sum.golang.org http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/gosum MAKEFLAGS=-j 4 NPM_CONFIG_REGISTRY=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/npmproxy/ PIP_INDEX_URL=http://nexus-repository-manager.nexus-repository-manager.svc.cluster.local:8081/repository/pypi/simple/ PIP_TRUSTED_HOST=nexus-repository-manager.nexus-repository-manager.svc.cluster.local /bin/sh -c chmod -R 0750 /opt/keycloak",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:41.837383373Z",
+          "created_by": "/bin/sh -c #(nop) USER keycloak",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:42.068656142Z",
+          "created_by": "/bin/sh -c #(nop) EXPOSE 8080 8443",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:42.324247619Z",
+          "created_by": "/bin/sh -c #(nop) ENTRYPOINT [ \"/opt/keycloak/bin/kc.sh\" ]",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-01-16T01:12:43.37291305Z",
+          "created_by": "/bin/sh -c #(nop) LABEL \"maintainer\"=\"ironbank@dsop.io\" \"org.opencontainers.image.created\"=\"2025-01-16 01:12:17+00:00\" \"org.opencontainers.image.source\"=\"https://repo1.dso.mil/dsop/opensource/keycloak/keycloak\" \"org.opencontainers.image.revision\"=\"c98f8ceff2268f7aa4ead748e4630342ce16b01b\" \"mil.dso.ironbank.image.parent\"=\"registry1.dso.mil/ironbank/redhat/openjdk/openjdk21-devel:1.21@sha256:03859b1da2ba4c8a6ea870b4c7ba7857a7b6204c425518eacd99fc402d2e409c\" \"mil.dso.ironbank.ci.id\"=\"3874336\" \"org.opencontainers.image.title\"=\"keycloak\" \"org.opencontainers.image.description\"=\"Keycloak is an open source Identity and Access Management solution aimed at modern applications and services.\" \"org.opencontainers.image.licenses\"=\"Apache-2.0\" \"org.opencontainers.image.url\"=\"https://www.keycloak.org\" \"org.opencontainers.image.vendor\"=\"Iron Bank\" \"org.opencontainers.image.version\"=\"26.0.8\" \"mil.dso.ironbank.image.keywords\"=\"auth,idam,sso\" \"mil.dso.ironbank.image.type\"=\"opensource\" \"mil.dso.ironbank.product.name\"=\"Keycloak\""
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:a377c2e7ffb99f8889e322b1fadcb448dc1c3c59615414d11218ddf1bd83671d",
+          "sha256:d86d133cdf1d91f5873c025ac25f0baf9c448e4c8fd588f74dc5bcab92758733",
+          "sha256:dbb7916f1bd38910d02cbeb989d565910cb897d12893fa9f06fc102bc44a8585",
+          "sha256:66330c3b628fc044aa4950b4c7dc50518c55c3b1642e709e2026e849918bfca1",
+          "sha256:18a88d02b66b68570c88d9268b3017d5d0f3e0731c5722c164b1985a28dbe276"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/opt/keycloak/bin/kc.sh"
+        ],
+        "Env": [
+          "container=oci",
+          "LANG=C.UTF-8",
+          "JAVA_HOME=/usr/lib/jvm/java",
+          "PATH=/usr/lib/jvm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Labels": {
+          "architecture": "x86_64",
+          "build-date": "2025-01-09T06:29:15Z",
+          "com.redhat.component": "ubi9-minimal-container",
+          "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+          "description": "The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.",
+          "distribution-scope": "public",
+          "io.buildah.version": "1.37.5",
+          "io.k8s.description": "The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.",
+          "io.k8s.display-name": "Red Hat Universal Base Image 9 Minimal",
+          "io.openshift.expose-services": "",
+          "io.openshift.tags": "minimal rhel9",
+          "maintainer": "ironbank@dsop.io",
+          "mil.dso.ironbank.ci.id": "3874336",
+          "mil.dso.ironbank.image.keywords": "auth,idam,sso",
+          "mil.dso.ironbank.image.parent": "registry1.dso.mil/ironbank/redhat/openjdk/openjdk21-devel:1.21@sha256:03859b1da2ba4c8a6ea870b4c7ba7857a7b6204c425518eacd99fc402d2e409c",
+          "mil.dso.ironbank.image.type": "opensource",
+          "mil.dso.ironbank.os-type": "ubi9-container",
+          "mil.dso.ironbank.product.name": "Keycloak",
+          "name": "ubi9-minimal",
+          "org.opencontainers.image.created": "2025-01-16 01:12:17+00:00",
+          "org.opencontainers.image.description": "Keycloak is an open source Identity and Access Management solution aimed at modern applications and services.",
+          "org.opencontainers.image.licenses": "Apache-2.0",
+          "org.opencontainers.image.revision": "c98f8ceff2268f7aa4ead748e4630342ce16b01b",
+          "org.opencontainers.image.source": "https://repo1.dso.mil/dsop/opensource/keycloak/keycloak",
+          "org.opencontainers.image.title": "keycloak",
+          "org.opencontainers.image.url": "https://www.keycloak.org",
+          "org.opencontainers.image.vendor": "Iron Bank",
+          "org.opencontainers.image.version": "26.0.8",
+          "release": "1736404155",
+          "summary": "Provides the latest release of the minimal Red Hat Universal Base Image 9.",
+          "url": "https://www.redhat.com",
+          "vcs-ref": "98c9e4c67f5f2dfc85d12e0f1fd70b809f2a3132",
+          "vcs-type": "git",
+          "vendor": "Red Hat, Inc.",
+          "version": "9.5"
+        },
+        "User": "keycloak",
+        "WorkingDir": "/",
+        "ExposedPorts": {
+          "8080/tcp": {},
+          "8443/tcp": {}
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak:26.0.8 (redhat 9.5)",
+      "Class": "os-pkgs",
+      "Type": "redhat",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-3661",
+          "VendorIDs": [
+            "RHSA-2025:0377"
+          ],
+          "PkgID": "NetworkManager-libnm@1.48.10-3.el9_5.x86_64",
+          "PkgName": "NetworkManager-libnm",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/NetworkManager-libnm@1.48.10-3.el9_5?arch=x86_64\u0026distro=redhat-9.5\u0026epoch=1",
+            "UID": "ee21a31088e50e4a"
+          },
+          "InstalledVersion": "1:1.48.10-3.el9_5",
+          "FixedVersion": "1:1.48.10-5.el9_5",
+          "Status": "fixed",
+          "Layer": {
+            "DiffID": "sha256:66330c3b628fc044aa4950b4c7dc50518c55c3b1642e709e2026e849918bfca1"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-3661",
+          "Title": "DHCP: DHCP routing options can manipulate interface-based VPN traffic",
+          "Description": "DHCP can add routes to a client’s routing table via the classless static route option (121). VPN-based security solutions that rely on routes to redirect traffic can be forced to leak traffic over the physical interface. An attacker on the same local network can read, disrupt, or possibly modify network traffic that was expected to be protected by the VPN.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-306",
+            "CWE-501"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "nvd": 3,
+            "oracle-oval": 2,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+              "V3Score": 7.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+              "V3Score": 7.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2025:0377",
+            "https://access.redhat.com/security/cve/CVE-2024-3661",
+            "https://arstechnica.com/security/2024/05/novel-attack-against-virtually-all-vpn-apps-neuters-their-entire-purpose/",
+            "https://bst.cisco.com/quickview/bug/CSCwk05814",
+            "https://datatracker.ietf.org/doc/html/rfc2131#section-7",
+            "https://datatracker.ietf.org/doc/html/rfc3442#section-7",
+            "https://errata.almalinux.org/9/ALSA-2025-0377.html",
+            "https://fortiguard.fortinet.com/psirt/FG-IR-24-170",
+            "https://issuetracker.google.com/issues/263721377",
+            "https://krebsonsecurity.com/2024/05/why-your-vpn-may-not-be-as-secure-as-it-claims/",
+            "https://linux.oracle.com/cve/CVE-2024-3661.html",
+            "https://linux.oracle.com/errata/ELSA-2025-0377.html",
+            "https://lowendtalk.com/discussion/188857/a-rogue-dhcp-server-within-your-network-can-and-will-hijack-your-vpn-traffic",
+            "https://mullvad.net/en/blog/evaluating-the-impact-of-tunnelvision",
+            "https://my.f5.com/manage/s/article/K000139553",
+            "https://news.ycombinator.com/item?id=40279632",
+            "https://news.ycombinator.com/item?id=40284111",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-3661",
+            "https://security.paloaltonetworks.com/CVE-2024-3661",
+            "https://support.citrix.com/article/CTX677069/cloud-software-group-security-advisory-for-cve20243661",
+            "https://tunnelvisionbug.com/",
+            "https://www.agwa.name/blog/post/hardening_openvpn_for_def_con",
+            "https://www.cve.org/CVERecord?id=CVE-2024-3661",
+            "https://www.leviathansecurity.com/research/tunnelvision",
+            "https://www.theregister.com/2024/05/07/vpn_tunnelvision_dhcp/",
+            "https://www.watchguard.com/wgrd-psirt/advisory/wgsa-2024-00009",
+            "https://www.zscaler.com/blogs/security-research/cve-2024-3661-k-tunnelvision-exposes-vpn-bypass-vulnerability"
+          ],
+          "PublishedDate": "2024-05-06T19:15:11.027Z",
+          "LastModifiedDate": "2025-01-15T16:50:28.667Z"
+        }
+      ]
+    }
+  ]
+}
