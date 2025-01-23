@@ -5,8 +5,3 @@ LABEL version=${TAG}
 LABEL decription="Keycloak image that has been patched using copacetic"
 LABEL com.devopsbase.base.image="registry1.dso.mil/ironbank/opensource/keycloak/keycloak"
 LABEL com.devopsbase.base.tag=${TAG}
-
-RUN dnf 
-
-RUN mvn dependency:purge-local-repository && \
-    mvn clean install -DskipTests
