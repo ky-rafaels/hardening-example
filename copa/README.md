@@ -26,3 +26,17 @@ docker build --provenance=true --sbom=true --push --tag IMAGE .
 ∙ --file="CVE-2024-12397.vex.json"
  > VEX document written to CVE-2024-12397.vex.json
  ```
+
+## Create an SBOM and Attest to Image
+
+```bash
+syft IMAGE:TAG -o spdx-json > image.spdx.json
+
+cosign clean IMAGE:TAG
+
+DIGEST=$(docker inspect IMAGE:TAG |jq -c 'first'| jq .RepoDigests | jq -c 'first' | tr -d '"')
+
+cosign attest --type spdxjson \
+ --predicate example-image.spdx.json \
+ $DIGEST
+```
