@@ -9,6 +9,8 @@ TAG=26.0.0
 
 IMAGE_PATH=${MIRROR}/${REPO}/${IMAGE}:${TAG}
 
+BUILD_DATE=$(date -I)
+
 echo "
 ------
 
@@ -33,7 +35,7 @@ trivy image --pkg-types os --platform linux/amd64 --ignore-unfixed -f json -o tr
 
 copa patch -i ${IMAGE_PATH} --debug -r trivy/keycloak-${TAG}.json -t ${TAG}-patched --addr docker://desktop-linux
 
-docker build -t harbor.csde.caci.com/equinox/keycloak:${TAG}-patched --provenance=true --sbom=true --builder=desktop-linux .
+docker build -t ${IMAGE_PATH}-${BUILD_DATE}-patched --provenance=true --sbom=true --builder=desktop-linux .
 
 # Sign image with cosign 
 
