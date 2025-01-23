@@ -3,10 +3,13 @@ FROM harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloa
 
 LABEL version=${TAG}
 LABEL decription="Keycloak image that has been patched using copacetic"
-LABEL com.devopsbase.base.image="registry1.dso.mil/ironbank/opensource/keycloak/keycloak"
-LABEL com.devopsbase.base.tag=${TAG}
+LABEL patched-by-copacetic="true"
 
-RUN dnf 
+# USER root
 
-RUN mvn dependency:purge-local-repository && \
-    mvn clean install -DskipTests
+# RUN dnf update -y && \
+#     dnf upgrade -y
+
+USER keycloak
+
+ENTRYPOINT [ "/opt/keycloak/bin/kc.sh" ]
