@@ -1,3 +1,11 @@
+ARG TAG=26.0.0
+FROM harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak:${TAG}-patched
+
+LABEL version=${TAG}
+LABEL decription="Keycloak image that has been patched using copacetic"
+LABEL com.devopsbase.base.image="registry1.dso.mil/ironbank/opensource/keycloak/keycloak"
+LABEL com.devopsbase.base.tag=${TAG}
+
 ARG BASE_REGISTRY=registry1.dso.mil
 ARG BASE_IMAGE=ironbank/redhat/openjdk/openjdk21-devel
 ARG BASE_TAG=1.21
@@ -25,3 +33,5 @@ RUN chmod -R 0750 /opt/keycloak
 USER keycloak
 
 EXPOSE 8080 8443
+
+ENTRYPOINT [ "/opt/keycloak/bin/kc.sh" ]
