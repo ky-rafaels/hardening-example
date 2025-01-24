@@ -1,28 +1,30 @@
-# How to use
+# Keycloak
 
-## Run OS patching 
+Keycloak is an Open Source Identity and Access Management solution for modern Applications and Services.
 
-Copa will patch all OS packages with a "fixed-in" version
+## Building an optimized Keycloak image
 
-```bash
-./copa-in-place-patch.sh
+The following Dockerfile creates a pre-configured Keycloak image that enables the metrics endpoint, enables the token exchange feature, and uses a PostgreSQL database.
+
+Dockerfile:
+```
+FROM registry1.dso.mil/ironbank/opensource/keycloak/keycloak:latest as builder
+
+ENV KC_METRICS_ENABLED=true
+ENV KC_FEATURES=token-exchange
+ENV KC_DB=postgres
+
+RUN /opt/keycloak/bin/kc.sh build
+
+FROM registry1.dso.mil/ironbank/opensource/keycloak/keycloak:latest
+
+COPY --from=builder /opt/keycloak/lib/quarkus/ /opt/keycloak/lib/quarkus/
+
+WORKDIR /opt/keycloak
+
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start"]
 ```
 
-## Build new image
+## Documentation
 
-```bash
-docker build --provenance=true --sbom=true --push --tag IMAGE .
-```
-
-## Create a Vex document for packages not affected
-
-```bash
-❯ vexctl create \
-∙ --author="kyle.rafaels@caci.com" \
-∙ --product="pkg:io.quarkus.http:quarkus-http-core@5.3.3" \
-∙ --vuln="CVE-2024-12397" \
-∙ --status="not_affected" \
-∙ --justification="vulnerable_code_not_in_execute_path" \
-∙ --file="CVE-2024-12397.vex.json"
- > VEX document written to CVE-2024-12397.vex.json
- ```
+To learn more about Keycloak [go to the complete documentation](https://www.keycloak.org/documentation.html).

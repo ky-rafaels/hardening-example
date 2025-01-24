@@ -1,6 +1,8 @@
-ARG TAG=26.0.0
-FROM harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak:${TAG}-patched
+ARG BASE_REGISTRY=registry1.dso.mil
+ARG BASE_IMAGE=ironbank/redhat/openjdk/openjdk21-devel
+ARG BASE_TAG=1.21
 
+<<<<<<< HEAD
 LABEL version=${TAG}
 LABEL decription="Keycloak image that has been patched using copacetic"
 LABEL patched-by-copacetic="true"
@@ -13,3 +15,28 @@ LABEL patched-by-copacetic="true"
 USER keycloak
 
 ENTRYPOINT [ "/opt/keycloak/bin/kc.sh" ]
+=======
+FROM quay.io/keycloak/keycloak:26.1.0 as upstream
+
+FROM ${BASE_REGISTRY}/${BASE_IMAGE}:${BASE_TAG}
+
+USER root
+
+RUN microdnf upgrade -y && \
+    microdnf clean all && \
+    rm -rf /var/cache/yum && \
+    # We have to add the FIPS provider to make SAML work: https://www.keycloak.org/server/fips
+    echo "fips.provider.7=XMLDSig" >> /usr/lib/jvm/java/conf/security/java.security && \
+    # User stuff
+    echo "keycloak:x:2000:root" >> /etc/group && \
+    echo "keycloak:x:2000:2000:keycloak user:/opt/keycloak:/sbin/nologin" >> /etc/passwd
+
+COPY --from=upstream --chown=2000:2000 /opt/keycloak /opt/keycloak
+
+# Prevent CCE-84038-9 and CCE-85888-6
+RUN chmod -R 0750 /opt/keycloak
+
+USER keycloak
+
+EXPOSE 8080 8443
+>>>>>>> feature/SPEC-3733-container-hardening-remediate-all-x-ray-scan-findings-for-keycloak-container
