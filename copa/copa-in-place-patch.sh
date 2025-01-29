@@ -2,7 +2,7 @@
 
 set -ux
 
-MIRROR=harbor.csde.caci.com
+MIRROR=""
 REPO=registry1.dso.mil
 IMAGE=ironbank/opensource/keycloak/keycloak
 TAG=26.0.0
@@ -35,7 +35,7 @@ trivy image --pkg-types os --platform linux/amd64 --ignore-unfixed -f json -o ..
 
 copa patch -i ${IMAGE_PATH} --debug -r ../trivy/keycloak-${TAG}.json -t ${TAG}-patched --addr docker://desktop-linux
 
-docker build -t harbor.csde.caci.com/${IMAGE_PATH}-${BUILD_DATE}-patched --provenance=true --sbom=true --builder=desktop-linux ../
+docker build -t ${IMAGE_PATH}-${BUILD_DATE}-patched --provenance=true --sbom=true --builder=desktop-linux ../
 
 # Sign image with cosign 
 

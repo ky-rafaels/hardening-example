@@ -1,7 +1,7 @@
 {
   "SchemaVersion": 2,
   "CreatedAt": "2025-01-23T10:58:15.096878-05:00",
-  "ArtifactName": "harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak:26.0.0",
+  "ArtifactName": "registry1.dso.mil/ironbank/opensource/keycloak/keycloak:26.0.0",
   "ArtifactType": "container_image",
   "Metadata": {
     "OS": {
@@ -16,10 +16,10 @@
       "sha256:d8298d542c291ed6781e6b44770fc10465db7d82460623f3baf02dbee2ca9278"
     ],
     "RepoTags": [
-      "harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak:26.0.0"
+      "registry1.dso.mil/ironbank/opensource/keycloak/keycloak:26.0.0"
     ],
     "RepoDigests": [
-      "harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak@sha256:4d66a1ea269ff350d65368366d1340bdc83f50b52ff1dc0d635b0714f2ebd501"
+      "registry1.dso.mil/ironbank/opensource/keycloak/keycloak@sha256:4d66a1ea269ff350d65368366d1340bdc83f50b52ff1dc0d635b0714f2ebd501"
     ],
     "ImageConfig": {
       "architecture": "amd64",
@@ -432,7 +432,7 @@
   },
   "Results": [
     {
-      "Target": "harbor.csde.caci.com/registry1.dso.mil/ironbank/opensource/keycloak/keycloak:26.0.0 (redhat 9.4)",
+      "Target": "registry1.dso.mil/ironbank/opensource/keycloak/keycloak:26.0.0 (redhat 9.4)",
       "Class": "os-pkgs",
       "Type": "redhat",
       "Vulnerabilities": [
